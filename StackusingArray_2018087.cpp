@@ -11,7 +11,7 @@ public:
     program() {
         top = -1;
     }  //membuat konstruktor
-    string push(string element) {
+    string push(string element) { //menambahkan data
         if (top == 4) {
             cout << "Stack Full" << endl;
             return "";
@@ -22,15 +22,20 @@ public:
         cout << element << "ditambahkan(pushed)." << endl;
         return element;
     }
-    void pop() {
+    void pop() { //menghapus data
         if (empty()) {
             cout << "\nStack is empty. Connot pop." << endl;
             return;
         }
         cout << "\nThe poppped element is:" << stack_array[top] << endl;
     }
-    bool empty() {
-        return(top == -1);
+    bool empty() { //ketika array kosong
+        return(top == -1); 
+    }
+    void display() {
+        if (empty()) {
+            cout << "\nStack is empty" << endl;
+        }
     }
 };
 
