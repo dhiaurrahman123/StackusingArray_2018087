@@ -20,6 +20,10 @@ public:
         stack_array[top] = element;
         cout << endl;
         cout << element << "ditambahkan(pushed)." << endl;
+        return element;
+    }
+    void pop() {
+        if(empty())
     }
 };
 
