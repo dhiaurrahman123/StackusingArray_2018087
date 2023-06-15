@@ -67,7 +67,7 @@ int main()
             s.push(element);
             break;
             }
-        case'2': {
+        case'2': 
             if (s.empty()) {
                 cout << "\nStack is empty." << endl;
                 break;
@@ -81,8 +81,7 @@ int main()
             return 0;
         default:
             cout << "\nInvalid choice." << endl;
-            break;
-        }
+            break;       
         }
     }
 }
